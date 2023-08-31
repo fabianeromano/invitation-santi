@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .parallax{
-    background-image: url(../../public/images/terreno.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-} */
+.image-container {
+    display: flex;
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex: 0 0 100%;
+    transition: transform 0.5s;
+}
+
+.carousel-image.active {
+    transform: translateX(0%);
+}
