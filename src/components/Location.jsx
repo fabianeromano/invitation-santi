@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Cafe from "/public/images/cafe.jpg"
+import Cafe from "/public/images/cafe.jpeg"
 
 import React from 'react'
 

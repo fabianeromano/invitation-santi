@@ -15,7 +15,7 @@ import Santi10 from "/public/images/santi10.jpg"
 function Carousel() {
 
     return (
-        <section className="w-full h-screen flex flex-col justify-center items-center min-h-[600px]">
+        <section className="w-full h-screen flex flex-col justify-start items-center min-h-[600px]">
             <h2 className="text-4xl font-bold text-center text-[#4E5340] mb-5">Mis fotitos</h2>
             <div className="carousel carousel-center max-w-md py-0 px-4 space-x-4">
                 <div className={`carousel-item w-full rounded-box `}>
