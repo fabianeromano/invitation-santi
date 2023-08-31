@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 function HeroParallax() {
     return (
-        <section className='w-full h-screen relative flex flex-col items-center justify-center bg-[#F0FEFC] parallax'>
+        <section className='w-full h-screen min-h-[600px] relative flex flex-col items-center justify-center bg-[#F0FEFC] parallax'>
             <div className='z-10'>
                 <Image src={Santi} alt='Santi Letra' className='h-auto w-[200px] animate-jump' />
             </div>
