@@ -3,17 +3,18 @@ import Image from 'next/image'
 import React from 'react'
 import Santi from "/public/images/santi-title.svg"
 import Arcoiris from "/public/images/arcoiris.png"
+import Arrow from "/public/images/arrow.svg"
 import Link from 'next/link'
 
 function HeroParallax() {
     return (
-        <section className='w-full h-screen min-h-[600px] relative flex flex-col items-center justify-center bg-[#F0FEFC] parallax'>
-            <div className='z-10'>
+        <section className='w-full h-screen min-h-[700px] relative flex flex-col items-center justify-start bg-[#F0FEFC] parallax'>
+            <div className='z-10 pt-4'>
                 <Image src={Santi} alt='Santi Letra' className='h-auto w-[200px] animate-jump' />
             </div>
 
             <div className='z-10 flex flex-col items-center justify-center'>
-                <Image src={Arcoiris} alt='Arcoiris' className='w-full h-auto animate-flip-up' />
+                <Image src={Arcoiris} alt='Arcoiris' className='w-[90%] h-auto animate-flip-up' />
                 <p className='text-[#4E5340] text-2xl font-medium'>Mi primer cumple</p>
                 <div className='flex h-[120px] justify-center items-center gap-3'>
                     <div className='flex flex-col items-center justify-center'>
@@ -28,11 +29,14 @@ function HeroParallax() {
                 </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center w-full gap-2 px-4 text-center">
+            <div className="flex flex-col items-center justify-center w-full gap-2 px-4 text-center pb-4">
                 <h3 className="text-2xl font-medium text-[#4E5340]">Confirmar asistencia con un</h3>
                 <Link href="https://wa.me/3814163294/?text=Confirmo%20mi%20Asistencia" target="_blank">
                     <button className="text-xl font-bold bg-[#2176AE] rounded-full text-white py-2 px-8 shadow-lg animate-pulse">Click aquí</button>
                 </Link>
+            </div>
+            <div className='animate-bounce rotate-180'>
+                <Image className='w-10 h-10' src={Arrow} alt="arrow" />
             </div>
         </section>
     )
