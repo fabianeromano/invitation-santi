@@ -53,7 +53,7 @@ function HeroParallax() {
                     <div className='flex flex-col items-center justify-between h-full py-4'>
                         <p className='text-4xl font-medium text-[#4E5340]'>Faltan</p>
                         {/* <p className="text-4xl font-bold text-[#4E5340]">{remainingTime?.days} dias</p> */}
-                        <p className="text-4xl font-bold text-[#4E5340]">{remainingTime?.hours} Hs {remainingTime?.minutes} Min {remainingTime?.seconds} Seg</p>
+                        <p className="text-xl font-bold text-[#4E5340]">{remainingTime?.hours} Hs {remainingTime?.minutes} Min {remainingTime?.seconds} Seg</p>
                     </div>
                 </div>
             </div>
