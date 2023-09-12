@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 
 function HeroParallax() {
 
-    const eventDate = moment('2023-09-12'); // Fecha y hora del evento
+    const eventDate = moment('2023-09-12 18:00'); // Fecha y hora del evento
 
     const [remainingTime, setRemainingTime] = useState({
         days: 0
@@ -23,6 +23,9 @@ function HeroParallax() {
 
             setRemainingTime({
                 days: duration.days(),
+                hours: duration.hours(),
+                minutes: duration.minutes(),
+                seconds: duration.seconds(),
             });
 
         }, 1000);
@@ -49,7 +52,8 @@ function HeroParallax() {
                     <span className='w-1 rounded-full h-[60%] bg-[#2176AE]' />
                     <div className='flex flex-col items-center justify-between h-full py-4'>
                         <p className='text-4xl font-medium text-[#4E5340]'>Faltan</p>
-                        <p className="text-4xl font-bold text-[#4E5340]">{remainingTime?.days} dias</p>
+                        {/* <p className="text-4xl font-bold text-[#4E5340]">{remainingTime?.days} dias</p> */}
+                        <p className="text-4xl font-bold text-[#4E5340]">{remainingTime?.hours} Hs {remainingTime?.minutes} Min {remainingTime?.seconds} Seg</p>
                     </div>
                 </div>
             </div>
